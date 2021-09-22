@@ -1,0 +1,12 @@
+- target:
+    url: http://internal-ip/WeatherForecast
+    method: GET
+    header:
+      Ocp-Apim-Subscription-Key:
+        - the-key
+  query_parameters:
+    threads: 5
+    max_threads: 10
+    connections: 12
+    duration: 30s
+    request_rate: 500
